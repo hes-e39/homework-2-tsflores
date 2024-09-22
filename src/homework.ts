@@ -82,7 +82,7 @@ export const isUser = (u: AllPeople) => {
 
 export const userGreetingMessage = (u: AllPeople) =>{
   if("isAdmin" in u){
-    return 'Hello, ' + u.name + '. You are an admin';
+    return 'Hello, ' + u.name + '. You are an admin.';
   } else if('type' in u){
     return 'Hello, ' + u.name + '. You are a user.';
   } else
